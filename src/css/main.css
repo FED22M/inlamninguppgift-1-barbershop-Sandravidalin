@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigering {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(20, 27, 37);
+    height: 50px;
+    width: 100%;
+
+}
+
+h1 {
+    color: white;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    color: white;
+
+
+}
+
+nav li {
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.hero {
+    width: 100;
+    height: 100vh;
+    display: flex;
+
+
+}
+
+.hero img {
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: white;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+
+}
+
+footer {
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.About {
+    background-color: beige;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.Services {
+    background-color: rgb(255, 194, 27);
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.kontakt {
+    background-color: beige;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.Hejdå {
+    background-color: rgb(255, 194, 27;
+            flex-grow: 1;
+            flex-basis: 100%;
+
+    }
+
+    .container h3 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 50px 20px;
+    }
+
+    .copyright {
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px;
+
+    }
+
+    container h3
