@@ -1,0 +1,594 @@
+/* Browser style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(20, 27, 37);
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+}
+
+
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+
+#hamnav {
+  width: 100%;
+  background: rgb(59, 58, 58);
+  position: absolute;
+  top: 0px;
+  right: 16px;
+  font-size: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: contents;
+
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  width: 100%;
+}
+
+#hamitems span {
+  color: rgb(191 146 91);
+}
+
+#hamitems a:hover {
+  background: rgb(191, 146, 91);
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+
+/*  headern */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(20, 27, 37, 0.8);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* sidans logo/style */
+.banner h1 {
+  text-shadow: 2px 2px 6px #000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+
+
+}
+
+/*style till bakgrundsbild/banner holdern*/
+.banner-holder {
+  background-image: url("./bilder/background_pic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 14rem 1rem;
+  position: relative;
+}
+
+/* Banner meny ligger här */
+.banner-content {
+  color: #fff;
+  max-width: 605px;
+  margin-left: auto;
+  position: relative;
+}
+
+.sub-title {
+  font-family: inherit;
+  font-weight: 700;
+  color: rgb(191 146 91);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.banner-content h1 {
+  font-size: 62px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.banner-content--inner {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.banner-holder h1 span {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+
+}
+
+.banner-content--inner p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.banner-content--inner .btn-custom {
+  margin-top: 2.3rem;
+  display: inline-block;
+}
+
+/* button style  */
+.btn-custom {
+  color: rgb(191 146 91);
+  border: 2px solid;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* färgen när du hovrar över meny-val*/
+.btn-custom:hover {
+  background-color: rgb(59, 58, 58);
+}
+
+/* Bakgrunds opacity*/
+.banner-overlay {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/* Service holder section */
+.service-holder {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.service-holder>div {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 20px;
+}
+
+.service-image {
+  max-width: 230px;
+  margin-top: -136px;
+
+}
+
+.service-holder h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block: 1.2rem;
+}
+
+.service-holder p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.hairstyles,
+.hot_shave {
+  background-color: rgb(191, 146, 91);
+}
+
+.beard_trim,
+.hair_shampoo {
+  background-color: rgb(183, 134, 73);
+}
+
+.about {
+
+  margin: 0%;
+  padding: 0% 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  gap: 10%;
+  align-items: center;
+
+}
+
+.about-text h4 {
+
+  font-family: "Barlow Semi Condensed";
+  color: rgb(191, 146, 91);
+  font-size: 14px;
+
+}
+
+.about-text,
+.smooth-barber,
+.small-text,
+.calender {
+  margin-top: 30px;
+
+}
+
+
+.smooth-barber {
+
+  font-family: "Barlow Semi Condensed";
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+
+.small-text {
+
+  font-family: "Poppins";
+  color: black;
+  font-size: 20px;
+
+}
+
+
+
+.calender {
+
+  background-color: rgb(191, 146, 91);
+  width: 500px;
+  height: 150px;
+  position: relative;
+
+
+}
+
+.number-text {
+
+  font-family: "Barlow Semi Condensed";
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 55%;
+  bottom: 10%;
+  margin: 0%;
+  padding: 0.8em;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.number-text span {
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+
+
+}
+
+.loga {
+  width: 30%;
+  position: absolute;
+  border-radius: 100%;
+  top: 20%;
+  left: 10%;
+  gap: 10%;
+}
+
+/* Style Reviews*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.recension {
+  background-color: rgb(235, 232, 222);
+  display: flex;
+  height: 100vh;
+}
+
+.recension-section {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 1100px;
+  text-align: center;
+
+
+}
+
+.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(191 146 91);
+  margin-bottom: .5rem;
+}
+
+.note {
+  font-size: 1.1rem;
+  color: #000;
+  font-style: "Barlow Semi Condensed", "Gill Sans";
+  font-weight: 700;
+}
+
+.reviews {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.review {
+  margin: 0 1rem;
+  min-width: 300px;
+  flex: 1;
+}
+
+.head-review {
+  margin: 1.75rem auto;
+  width: 150px;
+  height: 150px;
+
+}
+
+.Roger-scott image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 70%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+
+}
+
+.body-review {
+  background-color: rgb(238, 238, 238);
+  padding: 2.5rem;
+  box-shadow: 3px 3px 10px 3px rgb(225, 225, 225);
+
+}
+
+.name-review {
+  font-size: 1.5rem;
+  color: rgb(50, 50, 50);
+  margin-bottom: .25rem;
+}
+
+.customer-review {
+  color: rgb(191, 146, 91);
+  font-style: "Barlow Semi Condensed";
+}
+
+.rating {
+  color: rgb(191, 146, 91);
+  margin: 1rem 0;
+}
+
+.rating img {
+  max-width: 5%;
+
+
+}
+
+.Åsikter {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: black;
+}
+
+
+
+
+/* Style footer */
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow Semi Condensed";
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.container1 {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  padding: 40px 15px;
+}
+
+.container1 h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.BARBERSHOP {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.explore {
+  flex-grow: 1;
+  flex-basis: 70%;
+}
+
+.explore ul {
+  list-style-type: square;
+  line-height: 1.6;
+}
+
+.explore a {
+  color: white;
+  text-decoration: none;
+}
+
+.INFO {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.INFO ul {
+  list-style-type: square;
+  line-height: 1.6;
+}
+
+.INFO a {
+  color: white;
+  text-decoration: none;
+}
+
+.QUESTIONS {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.QUESTIONS ul {
+  list-style-type: square;
+  line-height: 1.6;
+}
+
+.QUESTIONS a {
+  color: white;
+  text-decoration: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: rgb(191, 146, 91);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked~#hamitems {
+    display: block;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .footer {
+    display: flex !important;
+    ;
+    margin-top: 10px !important;
+    ;
+    margin-bottom: 20px !important;
+    ;
+  }
+
+  .recension {
+    width: 100% !important;
+    ;
+  }
+
+  .review {
+    width: 100% !important;
+    ;
+  }
+
+  .container1 {
+    width: 100% !important;
+    ;
+  }
+
+  .calender {
+    width: 100% !important;
+    ;
+  }
+
+  .rescension {
+    width: 100% !important;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+
+}
