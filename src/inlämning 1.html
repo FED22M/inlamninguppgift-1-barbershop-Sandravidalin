@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout</title>
+    <style type="text/css"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+
+    <!-- Här ligger din titel på bannern, BARBERSHOP -->
+    <div class="header">
+        <div class="container2">
+            <div class="header-inner">
+                <div class="banner">
+                    <div class="banner-text">
+                        <h1> Barbershop</h1>
+                    </div>
+                </div>
+
+                <!-- Hamburger meny ligger här -->
+                <nav id="hamnav">
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger" />
+
+                    <!--meny ligger här -->
+                    <div id="hamitems">
+                        <a href="#home"><span>Home</span></a>
+                        <a href="#services">About</a>
+                        <a href="#news">Pricing</a>
+                        <a href="#news">Gallery</a>
+                        <a href="#news">Team</a>
+                        <a href="#news">Blog</a>
+                        <a href="#news">Contact</a>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--här ligger din text som syns över bakgrundsbilden-->
+    <section class="banner-holder" id="home">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="banner-content">
+                <h4 class="sub-title">
+                    Welcome to Barbershop
+                </h4>
+                <h1>
+                    We will make <span>your style</span> of your dreams
+                </h1>
+                <div class="banner-content--inner">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, nobis reprehenderit molestiae
+                        totam necessitatibus sapiente consequatur.</p>
+                    <a href="#" class="btn-custom">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Här kommer sektionen med dina runda bilder i de bruna boxarna-->
+
+    <section class="service-holder" id="services">
+        <!-- denna, section class med is tag, gör så att "about" menyn scrollar ner sidan automatiskt-->
+        <div class="hairstyles">
+            <a href="">
+                <img class="service-image" src="./bilder/hairstyles.png" class="responsive">
+            </a>
+            <h3>Hair styles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum excepturi cum eum aspernatur odio
+                omnis!</p>
+        </div>
+        <!--runda ikonerna-->
+        <div class="beard_trim">
+            <a href="">
+                <img class="service-image" src="./bilder/beardtrim.png" class="responsive">
+            </a>
+            <h3> Beard Trim</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, placeat!</p>
+        </div>
+        <!--runda ikonerna-->
+        <div class="hot_shave">
+            <a href="">
+                <img class="service-image" src="./bilder/hotshave.png" class="responsive">
+            </a>
+            <h3>Hot shave</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia explicabo distinctio voluptate
+                maxime
+                laborum molestiae vel officiis rem inventore. Quasi.</p>
+        </div>
+        <div class="hair_shampoo">
+            <a href="">
+                <!--Placeholder bild-->
+                <img class="service-image" src="./bilder/shampoo.png" class="responsive">
+            </a>
+            <h3>Hair shampoo</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt earum quidem distinctio. Facilis,
+                expedita
+                rem.</p>
+        </div>
+    </section><!-- /.service-holder -->
+
+    <section class="about">
+        <img src="https://i.ibb.co/qWMVtBV/jason-leung-2se-Ud-PQNy-I-unsplash.jpg" alt="about-image" height="35%"
+            width="35%" margin="30%" class="responsive">
+        <div class="about-text">
+            <h4>ABOUT BARBER</h4>
+            <p class="smooth-barber"><strong>A SMOOTH BARBER<br> EXPERIENCE IN YOUR TOWN</strong></p>
+            <p class="small-text">Lorem ipsum dolor sit amet.<br> In dolorum nihil non quod eaque et dolorem libero
+                hic
+                officiis quam reiciendis quae.<br>
+                Aut quisquam corporis et odit earum et voluptatum optio ut similique consequatur ex<br> recusandae
+                dolore ab
+                natus fuga </p>
+
+            <div class="calender">
+                <img class="loga" src="https://i.ibb.co/8YF6MF7/calender.png" alt="calender" width="60%" height="60%"
+                    class="responsive">
+                <p class="number-text"><span>20</span><br>YEARS Of<br> EXPERIENCE</p>
+            </div>
+        </div>
+    </section>
+    <!--/.Recension-holder-->
+    <section class="recension">
+
+        <div class="recension-section">
+
+            <h2 class="title">TESTIMONIAL</h2>
+            <p class="note"><strong>PEOPLE SAY<br> ABOUT OUR BARBER</strong></p>
+
+            <div class="reviews">
+
+                <div class="review">
+                    <div class="head-review">
+                        <img src="https://i.ibb.co/hYRNQHR/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash-modified.png"
+                            alt="Roger-scott" width="126" class="responsive">
+                    </div>
+                    <div class=" body-review">
+                        <div class="name-review">Roger scott</div>
+                        <div class="customer-review">customer</div>
+                        <div class="rating">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                        </div>
+                        <div class="Åsikter">Far far away,behind the word mountains,far from the countries Vokalia
+                            and
+                            Consonantia, there live the blind texts.
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="head-review">
+                        <img src="https://i.ibb.co/nnS2hM0/m-brauer-y-EYmna-Fu-YVM-unsplash-1-modified-1.png"
+                            alt="Roger-scott" width="126" class="responsive">
+                    </div>
+                    <div class=" body-review">
+                        <div class="name-review">Roger scott</div>
+                        <div class="customer-review">customer</div>
+                        <div class="rating">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                        </div>
+                        <div class="Åsikter">Far far away,behind the word mountains,far from the countries Vokalia
+                            and
+                            Consonantia, there live the blind texts.</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="head-review">
+                        <img src="https://i.ibb.co/XjTS06Q/gregory-hayes-h5cd51-KXm-RQ-unsplash-modified-1.png"
+                            alt="Roger-scott" width="126" class="responsive">
+                    </div>
+                    <div class=" body-review">
+                        <div class="name-review">Roger scott</div>
+                        <div class="customer-review">customer</div>
+                        <div class="rating">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+                            <img src="./bilder/black-star-icon.png" alt="star">
+
+
+                        </div>
+                        <div class="Åsikter">Far far away,behind the word mountains,far from the countries Vokalia
+                            and
+                            Consonantia, there live the blind texts.</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <section class="container1">
+            <div class="BARBERSHOP">
+                <h3> BARBERSHOP</h3>
+                <p>Far far away,behind the word<br> mountains,far from the<br> countries</p>
+
+
+            </div>
+            <div class="explore">
+                <h3>EXPLORE</h3>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="INFO">
+                <h3>INFO</h3>
+                <ul>
+                    <li>
+                        <a href="#">Join us</a>
+                    </li>
+                    <li>
+                        <a href="#">Make Appointment</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy & Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Term & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="QUESTIONS">
+                <h3>HAVE A QUESTIONS</h3>
+                <ul>
+                    <li>
+                        Adress: 203 Fake st.Maountain<br>
+                        View, San Francisco.<br>
+                        California,USA
+                    </li>
+                    <li>
+                        Phone: +2 392 3929 210
+                    </li>
+                    <li>
+                        Email: info@yourmain.com
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>

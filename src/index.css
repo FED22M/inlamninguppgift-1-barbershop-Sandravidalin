@@ -237,13 +237,14 @@ h5 {
 
   margin: 0%;
   padding: 0% 2%;
+  width: 100%;
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: center;
   background-color: white;
   gap: 10%;
   align-items: center;
-
 }
 
 .about-text h4 {
@@ -259,7 +260,6 @@ h5 {
 .small-text,
 .calender {
   margin-top: 30px;
-
 }
 
 
@@ -271,30 +271,20 @@ h5 {
   font-weight: 500;
 }
 
-
-
 .small-text {
-
   font-family: "Poppins";
   color: black;
   font-size: 20px;
-
 }
 
-
-
 .calender {
-
   background-color: rgb(191, 146, 91);
-  width: 500px;
+  width: 400px;
   height: 150px;
   position: relative;
-
-
 }
 
 .number-text {
-
   font-family: "Barlow Semi Condensed";
   color: white;
   font-size: 15px;
@@ -312,8 +302,6 @@ h5 {
   font-size: xx-large;
   font-weight: bold;
   color: white;
-
-
 }
 
 .loga {
@@ -333,40 +321,32 @@ h5 {
   padding: 0;
 }
 
-.recension {
-  background-color: rgb(235, 232, 222);
-  display: flex;
-  height: 100vh;
-}
-
 .recension-section {
   margin: auto;
   padding: 0 1rem;
-  max-width: 1100px;
+  max-width: 100%;
   text-align: center;
-
-
+  background-color: rgb(235, 232, 222);
 }
 
+
 .title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: rgb(191 146 91);
-  margin-bottom: .5rem;
+  font-family: "Barlow Semi Condensed";
+  color: rgb(191, 146, 91);
+  font-size: 14px;
 }
 
 .note {
-  font-size: 1.1rem;
-  color: #000;
-  font-style: "Barlow Semi Condensed", "Gill Sans";
-  font-weight: 700;
+  font-family: "Barlow Semi Condensed";
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .reviews {
   margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .review {
@@ -375,55 +355,50 @@ h5 {
   flex: 1;
 }
 
+.rating img {
+  max-width: 5%;
+}
+
 .head-review {
   margin: 1.75rem auto;
   width: 150px;
   height: 150px;
 }
 
-.Roger-scott image {
+.image1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 70%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  display: flex;
-
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
 }
 
 .body-review {
   background-color: rgb(238, 238, 238);
   padding: 2.5rem;
-  box-shadow: 3px 3px 10px 3px rgb(225, 225, 225);
-
+  box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
 }
 
 .name-review {
   font-size: 1.5rem;
-  color: rgb(50, 50, 50);
+  color: rgb(black);
   margin-bottom: .25rem;
 }
 
-.customer-review {
+.place-review {
   color: rgb(191, 146, 91);
-  font-style: "Barlow Semi Condensed";
+  font-style: italic;
 }
 
 .rating {
-  color: rgb(191, 146, 91);
+  color: rgb(253, 180, 42);
   margin: 1rem 0;
 }
 
-.rating img {
-  max-width: 5%;
-
-
-}
-
-.Åsikter {
+.desc-review {
   line-height: 1.5rem;
   letter-spacing: 1px;
-  color: black;
+  color: rgb(black);
 }
 
 /* Style footer */
@@ -446,7 +421,7 @@ footer {
 
 .container1 {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 100%;
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -510,10 +485,7 @@ footer {
 }
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
+@media screen and (max-width: 800px) {
 
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
@@ -538,6 +510,10 @@ footer {
     display: none;
   }
 
+  .responsive {
+    width: 100%;
+  }
+
   #hamnav input:checked~#hamitems {
     display: block;
   }
@@ -548,43 +524,93 @@ footer {
     align-items: baseline;
   }
 
-  .footer {
-    display: flex !important;
-    ;
-    margin-top: 10px !important;
-    ;
-    margin-bottom: 20px !important;
-    ;
+  .service-holder {
+    width: 420%;
+    display: block;
+    flex-direction: column;
+    height: max-content;
+
   }
 
-  .recension {
-    width: 100% !important;
-    ;
+  .service-image {
+    width: 20%;
   }
 
-  .review {
-    width: 100% !important;
-    ;
-  }
-
-  .container1 {
-    width: 100% !important;
-    ;
+  .service-holder p {
+    margin-bottom: 25px;
   }
 
   .calender {
+    width: 75%;
+  }
+
+  .loga {
+    width: auto;
+  }
+
+
+  .review {
+    width: 100% !important;
+
+  }
+
+  .number-text {
     width: 100% !important;
     ;
   }
 
-  .rescension {
+  .name-review {
     width: 100% !important;
+
   }
 
-  .responsive {
+
+  .QUESTIONS {
+    width: 80% !important;
+    ;
+  }
+
+  .rating {
+
+    width: 100% !important;
+    ;
+  }
+
+  .rating img {
+    width: 100% !important;
+    ;
+  }
+
+  .about {
     width: 100%;
-    height: auto;
+    display: block;
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .container1 {
+    width: 100%;
+    display: block;
+    flex-direction: column;
   }
 
 
+
+  .container1 {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    padding: 40px 15px;
+  }
+
+  .strong {
+    width: 100% !important;
+    ;
+  }
 }
